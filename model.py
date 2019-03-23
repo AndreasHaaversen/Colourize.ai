@@ -36,7 +36,7 @@ model.add(Conv2D(2, (3, 3), activation='tanh', padding='same'))
 
 model.compile(optimizer='rmsprop', loss='mse')
 
-model.fit(x=X, y=Y, batch_size=1, epochs=3000)
+model.fit(x=X, y=Y, batch_size=1, epochs=20)
 print(model.evaluate(X, Y, batch_size=1))
 
 output = model.predict(X)
